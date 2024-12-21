@@ -6,11 +6,11 @@ function Header() {
   const iconStyle = { color: 'rgba(138, 227, 216, 1.1)', transition: 'color 0.3s' };
 
   const handleMouseEnter = (icon) => {
-    setHoveredIcon(icon); // Set the hovered icon
+    setHoveredIcon(icon); 
   };
 
   const handleMouseLeave = () => {
-    setHoveredIcon(null); // Reset the hovered icon
+    setHoveredIcon(null); 
   };
 
   return (
