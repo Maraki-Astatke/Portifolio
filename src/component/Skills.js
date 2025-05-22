@@ -6,7 +6,7 @@ const skillsData = [
     { icon: <FaHtml5 />, label: 'HTML' },
     { icon: <FaCss3 />, label: 'CSS' },
     { icon: <FaJs />, label: 'JavaScript' },
-    { icon: <FaPython />, label: 'Python' },
+   
     { icon: <FaJava />, label: 'Java' },
     { icon: <FaPhp />, label: 'PHP' },
     { icon: <FaReact />, label: 'React' },
@@ -32,7 +32,7 @@ function Skills() {
             </div>
             
             <div className='container mx-auto mt-5 text-gray-400 text-sm'>
-                The skills, tools, and technologies I am really good at:
+                The skills, tools, and technologies I have tried:
             </div>
             
             <div className='flex justify-center gap-6 items-center flex-wrap mt-8'>

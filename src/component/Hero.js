@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 
 function Hero() {
   return (
@@ -9,12 +10,15 @@ function Hero() {
             Hi there, I'm <span className="text-teal-500">Maraki Astatke</span>
             <br />
             Front-end Developer
+          
           </h1>
           
           <p className="text-gray-400 max-w-xl mx-auto md:mx-0">
             Passionate about creating elegant, responsive, and user-centric web experiences. 
             I transform complex problems into intuitive digital solutions.
           </p>
+     
+        
           
           <div className="space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
@@ -33,19 +37,22 @@ function Hero() {
           </div>
           
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-6">
-          <a 
-            href="..\image\cv.png" 
-            download="cv.png" 
-            className="px-6 py-3 border-2 border-teal-500 text-teal-500 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2"
-          >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3a1 1 0 102 0V8z" clipRule="evenodd" />
-            </svg>
-            <span>Download CV</span>
-          </a>
-            <button className="px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors duration-300">
-              Hire Me
-            </button>
+            <a 
+              href="..\image\cv.png" 
+              download="cv.png" 
+              className="px-6 py-3 border-2 border-teal-500 text-teal-500 rounded-lg hover:bg-teal-500 hover:text-white transition-colors duration-300 flex items-center justify-center space-x-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3a1 1 0 102 0V8z" clipRule="evenodd" />
+              </svg>
+              <span>Download CV</span>
+            </a>
+            <Link 
+              to="/certificates" // Use Link for navigation
+              className="px-6 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors duration-300"
+            >
+              Certificates
+            </Link>
           </div>
         </div>
       </div>
