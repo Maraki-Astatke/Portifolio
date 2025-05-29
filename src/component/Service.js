@@ -10,12 +10,6 @@ function Service() {
       path: '/web-development'
     },
     {
-      icon: 'image/illustration.png',
-      title: 'UI/UX Design',
-      description: 'Designing intuitive interfaces that elevate user experience and interaction.',
-      path: '/ui-ux-design'
-    },
-    {
       icon: 'image/image.png',
       title: 'Graphic Design',
       description: 'Creating visually compelling graphics that tell your brand\'s unique story.',
@@ -32,9 +26,9 @@ function Service() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {services.map((service, index) => (
-            <Link to={service.path} key={index} className="block">
+            <Link to={service.path} key={index} className="block w-full md:w-1/2 lg:w-1/3">
               <div
                 className="
                   bg-[#1E1E1E] 
@@ -66,7 +60,7 @@ function Service() {
                     <img
                       src={service.icon}
                       alt={service.title}
-                      className="w-10 h-10 filter brightness-0  "
+                      className="w-10 h-10 filter brightness-0"
                     />
                   </div>
                 </div>
@@ -92,7 +86,6 @@ function Service() {
                 ">
                   {service.description}
                 </p>
-
               </div>
             </Link>
           ))}

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 function CertificatesPage() {
   const certificates = [
-    { image: 'image/certifacte/dandii.jpg', title: 'Certificate 1' },
-    { image: 'image/certifacte/data.png', title: 'Certificate 2' },
-    { image: 'image/certifacte/exi.jpg', title: 'Certificate 3' },
-    { image: 'image/certifacte/hack.jpg', title: 'Certificate 4' },
-    { image: 'image/certifacte/kuraz.jpg', title: 'Certificate 5' },
-    { image: 'image/certifacte/prog.png', title: 'Certificate 6' },
+    // { image: 'image/certifacte/dandii.jpg', title: 'Certificate 1' },
+    { image: 'image/certifacte/data.png', title: 'Certificate 1' },
+    { image: 'image/certifacte/exi.jpg', title: 'Certificate 2' },
+    { image: 'image/certifacte/hack.jpg', title: 'Certificate 3' },
+    { image: 'image/certifacte/kuraz.jpg', title: 'Certificate 4' },
+    { image: 'image/certifacte/prog.png', title: 'Certificate 5' },
   ];
 
   const [selectedCert, setSelectedCert] = useState(null);
